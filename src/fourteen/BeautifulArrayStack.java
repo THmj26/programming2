@@ -34,6 +34,7 @@ public class BeautifulArrayStack implements Stack {
         top = top + 1;
         stk[top] = v;
         notifyAll(); // why not just notify()?
+        //因为notify只是随机唤醒一个在等待当前对象的线程
     }
 
 
