@@ -16,15 +16,15 @@ public class GuysnDolls {
 
         Guy G1 = new Guy("Frank");
         Guy G2 = new Guy("Marlon");
-        // Guy G3 = new Guy("Qui");
-        // Guy G4 = new Guy("Quo");
-        // Guy G5 = new Guy("Qua");
+//         Guy G3 = new Guy("Qui");
+//         Guy G4 = new Guy("Quo");
+//         Guy G5 = new Guy("Qua");
 
         G1.start();
         G2.start();
-        // G3.start();
-        // G4.start();
-        // G5.start();
+//        G3.start();
+//        G4.start();
+//        G5.start();
 
         Thread.currentThread().sleep(100);
         G1.interrupt();
