@@ -19,7 +19,7 @@ public class YesWeCan {
 
     public static void main(String[] args) throws InterruptedException {
         YesWeCan ywc = new YesWeCan();
-        // ywc.m2(); // no: IllegalMonitorStateException is raised
+//        ywc.m2(); // no: IllegalMonitorStateException is raised
         ywc.m1(); //ok!
         // ... the program goes catatonic, as one would expect,
         // but no IllegalMonitorStateException is raised.
