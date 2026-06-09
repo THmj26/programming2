@@ -8,9 +8,10 @@ public class threadNode extends Thread{
     }
     @Override
     public void run() {
-        while (!interrupted()) {
+        while (!isInterrupted()) {
 //            System.out.println("现在是线程" + this.getName() + "在运行");
             node.exchange();
+            Thread.yield();
         }
     }
 }

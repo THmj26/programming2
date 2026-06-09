@@ -24,9 +24,9 @@ public class TestC {
         C1 z = new C2(777, 888, 999);
         z.ciao("hallo z! a = 777, b = 888, fourtytwo = 999");
 
-        // System.out.println("fourtytwo = " + z.fourtytwo); // a field of C2 (NO!)
-        //  z.blorg(); // NO!
-        //  z.blah(100); // NO!
+//         System.out.println("fourtytwo = " + z.fourtytwo); // a field of C2 (NO!)
+//          z.blorg(); // NO!
+//          z.blah(100); // NO!
 
         z.plus(); // the plus method of C2 is executed
         System.out.println("... although b = " + z.b); // the b of C1 is read
