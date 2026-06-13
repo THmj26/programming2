@@ -5,7 +5,7 @@ package thirteen.java;
  */
 public class AMess {
     /*
-    Two threads pop over a stack. If they do not synchronize
+    Two threads pop over a Stack. If they do not synchronize
     (see ArrayStack) they may extract the same element, and one
     element may be lost!
     */

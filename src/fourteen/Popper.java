@@ -1,7 +1,7 @@
 package fourteen;
 
 public class Popper extends Thread {
-    // pops from a stack
+    // pops from a Stack
 
     private Stack pila;
 

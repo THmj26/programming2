@@ -4,9 +4,9 @@ public class UglyArrayStack implements Stack {
 
     /* It implements tha ADT of stacks of integers in a
     concurrent setting. The critical parts of push and pop
-    are synchronized. When a popper finds an empty stack it
+    are synchronized. When a popper finds an empty Stack it
     goes to sleep, and it does so *outside* the synchronized
-    block. It won't work because in between test and stack
+    block. It won't work because in between test and Stack
     uptate there may be interferences! Sleeping inside (that
     is declaring push and pop synchronized) won't work either,
     because sleep() does not release locks.
@@ -37,7 +37,7 @@ public class UglyArrayStack implements Stack {
 //并且sleep并不会释放线程 所以有可能会导致出现死锁(线程一直占用锁 同时还一直沉睡 所以判断条件永远不可能为真)
 
     public void push (int v) throws InterruptedException {
-        // pushes an int on top of the stack if there is
+        // pushes an int on top of the Stack if there is
         // room for it, otherwise it *rests* and then tries again
 
         while (isFull())

@@ -6,7 +6,7 @@ public class TestAStack {
         // playing with stacks
 
         ArrayStack2 SS = new ArrayStack2(2);
-        System.out.println("created a stack of length " +
+        System.out.println("created a Stack of length " +
                 SS.lunghezza());
         try {
             SS.push(6);
@@ -17,10 +17,10 @@ public class TestAStack {
             //SS.pop(); // exception!
         }
         catch (FullStackException e) {
-            System.out.println("Full stack exception while pushing " + e.value);
+            System.out.println("Full Stack exception while pushing " + e.value);
         }
         catch (EmptyStackException e) {
-            System.out.println("Empty stack exception!");
+            System.out.println("Empty Stack exception!");
         }
     }
 }

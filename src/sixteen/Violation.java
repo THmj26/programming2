@@ -29,7 +29,7 @@ public class Violation {
             System.out.println("ciao");
             e.printStackTrace();
         }
-        System.out.println(s.pop()); // one stack element missing!
+        System.out.println(s.pop()); // one Stack element missing!
     }
 
 }

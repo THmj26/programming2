@@ -22,7 +22,7 @@ public class ArrayStack {
     }
 
     public void push (int v) throws FullStackException {
-        // inserts an element on top of the stack... if there is room for it!
+        // inserts an element on top of the Stack... if there is room for it!
 
         if (top == stk.length - 1) throw new FullStackException(top);
         top = top + 1;
@@ -32,7 +32,7 @@ public class ArrayStack {
     // public synchronized int pop () throws EmptyStackException, InterruptedException {
 
     public int pop () throws EmptyStackException, InterruptedException {
-        // extracts and returns the element on top of the stack... if the stack is not empty!
+        // extracts and returns the element on top of the Stack... if the Stack is not empty!
         // if unsynchronized the printing and the extraction by two threads may be interleaved
 
         System.out.println("It's me, " + Thread.currentThread().getName() + ", and I'm popping");

@@ -1,10 +1,10 @@
 package four;
 
 public class IntList {
-    int head;
-    IntList tail;
+    public int head;
+    public IntList tail;
 
-    IntList(int head,IntList tail){this.head=head;this.tail=tail;}
+    public IntList(int head, IntList tail){this.head=head;this.tail=tail;}
 
     public void printList(int n){
         if(n<=0){

@@ -1,8 +1,9 @@
-package four;
+package eight;
 
+import four.IntList;
 import three.EmptyStackException;
 
-public class ListStack {
+public class ListStack implements Stack{
     static int len =0;
     IntList head =null;
 

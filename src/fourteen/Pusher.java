@@ -1,7 +1,7 @@
 package fourteen;
 
 public class Pusher extends Thread {
-    // pushes a value in a stack
+    // pushes a value in a Stack
 
     private Stack pila;
     private int valore;

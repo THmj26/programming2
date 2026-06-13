@@ -24,7 +24,7 @@ public class BeautifulArrayStack implements Stack {
 //这里将整个函数包括起来 使得一次只有一个线程可以调用 就不会发生都过了筛选的情况
 //并且这里的等待方法 用的是wait函数 这个函数可以在等待的时候释放锁
     public synchronized void push (int v) throws InterruptedException {
-        // pushes an int on top of the stack if there is room
+        // pushes an int on top of the Stack if there is room
         // for it, otherwise it *waits* and then tries again.
 
         while (isFull())
