@@ -14,7 +14,7 @@ public class LambdaTest {
         for (String s : words) // "for-each" iteration, uses an object (words) of type Iterable
             System.out.println(s);
 
-        /* In Java 8 interface Itarable provides a new way to iterate: the forEach *method*!
+        /* In Java 8 interface Iterable provides a new way to iterate: the forEach *method*!
          forEach inputs an object of type Consumer. Consumer is a generic functional interface
          with a (unique) abstract void method accept (T t).
          */

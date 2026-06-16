@@ -9,15 +9,14 @@ public class TestAnonymous {
 
         String hallo = "Hallo ";
 
-        Readable <String> x = new MyReadable<String>("Bubu!") {
+        Readable <String> x = new MyReadable<String>("bubu") {
             /*
             Anonimous class: extends MyLeggibile<String>, redefining method get
             Notice: you can use a costructor with a parameter. It must obey the same
             restrictions as local classes: access to effectively final variables only...
             */
-
             public String get() {
-                // hallo = hallo + hallo; // no: hallo must be effectively final
+//                hallo = hallo + hallo; // no: hallo must be effectively final
                 System.out.print(hallo);
                 return super.get(); // calls super get()
             }

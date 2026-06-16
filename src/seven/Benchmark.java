@@ -11,6 +11,7 @@ public abstract class Benchmark {
     }
 
     abstract void action (); // abstract method
+    //must have the abstract signature
 
     public long runTime (int n) { // concrete method
         // computes the run time of n calls to action()

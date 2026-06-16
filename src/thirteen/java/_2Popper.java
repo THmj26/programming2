@@ -3,11 +3,11 @@ package thirteen.java;
 /**
  * Created by pietrocenciarelli on 14/04/21.
  */
-public class Popper extends Thread {
+public class _2Popper extends Thread {
 
-    private ArrayStack stack;
+    private _1ArrayStack stack;
 
-    public Popper (ArrayStack stack) {
+    public _2Popper(_1ArrayStack stack) {
         this.stack = stack;
     }
 

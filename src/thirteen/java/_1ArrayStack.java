@@ -3,7 +3,7 @@ package thirteen.java;
 /**
  * Created by pietrocenciarelli on 14/04/21.
  */
-public class ArrayStack {
+public class _1ArrayStack {
 
     /* implementation of the stacs abstract data type (using exceptions).
     Method pop() is synchronized, method push is not; hence two concurrent
@@ -13,7 +13,7 @@ public class ArrayStack {
     private int[] stk;
     private int top = -1;
 
-    ArrayStack(int l) {
+    _1ArrayStack(int l) {
         stk = new int[l];
     }
 
@@ -38,13 +38,13 @@ public class ArrayStack {
         System.out.println("It's me, " + Thread.currentThread().getName() + ", and I'm popping");
 
          synchronized (this) { // alternative to synchronizin the whole method
-        // synchronized (new Object()) { // won't work: two poppers (see AMess)...
+        // synchronized (new Object()) { // won't work: two poppers (see _3AMess)...
         // ...synchronize on different objects
         if (top < 0) throw new EmptyStackException();
         top = top - 1;
         // Thread.currentThread().sleep(100);
         // this command, if in unsynchronized context, may
-        // cause loss of elements (see AMess: 42 is lost)
+        // cause loss of elements (see _3AMess: 42 is lost)
         return stk[top + 1];
         }
     }

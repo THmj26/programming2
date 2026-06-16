@@ -2,7 +2,7 @@ package thirteen.java;
 
 public class NamedThread extends Thread {
 
-    public static NamePrinter NP = new NamePrinter();
+    public static _4NamePrinter NP = new _4NamePrinter();
 
     public NamedThread(String name) {
         super(name);
